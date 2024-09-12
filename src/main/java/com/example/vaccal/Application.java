@@ -1,4 +1,4 @@
-package com.example.Spring;
+package com.example.vaccal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

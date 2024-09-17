@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Service
-public class VacationCalculatorService {
+public class VacationCalculationService {
 
     public double calculateVacationPay(VacationRequest request) {
         double dailySalary = request.getAverageSalary() / 30.0;
@@ -37,7 +37,7 @@ public class VacationCalculatorService {
     }
 
     private Set<LocalDate> getHolidays(int year) {
-        Set<LocalDate> holidays = new HashSet();
+        Set<LocalDate> holidays = new HashSet<>();
         holidays.add(LocalDate.of(year, 1, 1));
         holidays.add(LocalDate.of(year, 5, 1));
         holidays.add(LocalDate.of(year, 12, 25));

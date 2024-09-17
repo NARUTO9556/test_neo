@@ -1,7 +1,7 @@
 package com.example.vaccal.controller;
 
 import com.example.vaccal.entity.VacationRequest;
-import com.example.vaccal.service.VacationCalculatorService;
+import com.example.vaccal.service.VacationCalculationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +14,9 @@ import java.time.format.DateTimeParseException;
 @RestController
 @RequestMapping("/calculate")
 public class VacationCalculatorController {
-    private final VacationCalculatorService calculatorService;
+    private final VacationCalculationService calculatorService;
 
-    public VacationCalculatorController(VacationCalculatorService calculatorService) {
+    public VacationCalculatorController(VacationCalculationService calculatorService) {
         this.calculatorService = calculatorService;
     }
 
